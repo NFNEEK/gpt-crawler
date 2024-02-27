@@ -1,9 +1,11 @@
 import { Config } from "./src/config";
 
 export const defaultConfig: Config = {
-  url: "https://www.builder.io/c/docs/developers",
-  match: "https://www.builder.io/c/docs/**",
-  maxPagesToCrawl: 50,
-  outputFileName: "output.json",
+  url: "https://photofinish.live/races", 
+  match: "https://photofinish.live/races/**",
+  selector: '.container',
+  maxPagesToCrawl: 100,
+  outputFileName: "PFrace.json",
   maxTokens: 2000000,
+  waitForSelectorTimeout: 5000, // Increase timeout to 5000ms
 };
